@@ -1,11 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Punto5", "Punto5", "{74D19DAC-2C9E-4699-8E74-4B33B939B5FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoracionHabiltacionesHotel", "DecoracionHabiltacionesHotel\DecoracionHabiltacionesHotel.csproj", "{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCE660A1-FFCE-4F66-B941-1CD6B580A2DC} = {74D19DAC-2C9E-4699-8E74-4B33B939B5FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6F9008C-3DB2-4C56-9090-79A15E4735C4}
