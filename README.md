@@ -1,47 +1,4 @@
 # Patrones
----
-Tarea de Patrones para Diplomado de Arquitectura de Software
-
-Instructions
-Entregar en un repositorio de github con los integrantes del equipo.
-
-Patron de cada ejercicio
-Diagrama de clases
-Implementación de código, todos los ejercicios en el mismo lenguaje de programación
-
----
-
-# Integrantes
-- Santiago Medina Peláez
-- Luis Eduardo Olaya Diáz
-- Luis Horacio Londoño Cifuentes 
----
-
-## 1.Problema: Clonación de Personajes en un Videojuego de Aventuras 
-
-Imagina que estás desarrollando un videojuego de aventuras en el que los jugadores pueden controlar a un grupo de héroes con habilidades únicas. Necesitas implementar un sistema de clonación de personajes. Los jugadores deben poder clonar y personalizar héroes existentes para formar equipos estratégicos. 
-
-Requerimientos del sistema: 
-
-  1. Los jugadores deben poder clonar a los héroes existentes en el juego para crear nuevos personajes con habilidades idénticas. 
-  2. Cada héroe tiene un conjunto único de habilidades especiales que incluyen ataques, defensas y habilidades mágicas. 
-  3. Los heroes pueden pertenecer a diferentes clases, como guerreros, magos o arqueros, y cada clase tiene su propio conjunto de habilidades base. 
-  4. Los jugadores deben poder personalizar los nombres y aspectos visuales de los héroes clonados despues de la clonación. 
-  5. Los héroes deben mantener un registro de su experiencia, nivel y puntos de habilidad, y esta información debe copiarse correctamente al clonar un héroe. 
-  6. El sistema debe ser eficiente y permitir la creación de múltiples clones de un mismo héroe sin duplicar innecesariamente los datos.
-
-## 2. 
-
-La empresa está desarrollando una aplicación de mensajería en tiempo real que permite a los usuarios comunicarse desde múltiples dispositivos. Cada vez que un usuario recibe un nuevo mensaje, todos los dispositivos del usuario deben ser notificados para que el mensaje se muestre en cada uno de ellos. Para mantener la flexibilidad y desacoplar la lógica de notificación de la aplicación principal. El patrón que escoja deberá permitir
-
-1. **Notificación en Tiempo Real:** Cada dispositivo del usuario debe recibir una notificación cuando llegue un nuevo mensaje.
-2. **Desacoplamiento:** La aplicación de mensajería debe poder notificar a cualquier número de dispositivos sin saber detalles específicos sobre cada uno de ellos.
-3. **Flexibilidad:** Los dispositivos pueden ser añadidos o eliminados en tiempo de ejecución sin necesidad de modificar la lógica principal de la aplicación.
-
-## 3. Integración de un Sistema de Pago Externo 
-Imagina que estás desarrollando una plataforma de comercio electrónico y deseas ofrecer a tus clientes múltiples opciones de pago, incluyendo tarjetas de crédito, PayPal y un nuevo sistema de pago digital que acaba de ser lanzado. Sin embargo, este nuevo sistema de pago tiene una interfaz incompatible con tu plataforma existente, lo que dificulta su integración.
-
-Tu solución debe permitir lograr una integración suave y coherente del nuevo sistema de pago en tu plataforma de comercio electrónico, sin tener que modificar la lógica interna de tu sistema existente. Para facilitar la adopción de nuevas tecnologías y sistemas en tu aplicación sin interrumpir su funcionalidad principal.
 
 ## 4. Sistema de Gestión de Tareas
 Contexto:
@@ -55,16 +12,27 @@ El patrón que seleccione debe tener los siguientes beneficios:
 - Permite la extensión de nuevas operaciones sin modificar el código existente.
 - Facilita el registro de acciones para realizar operaciones de reversión.
 
-## 5. Decoración de Habitaciones en un Hotel
+## Justificación 
+**Propósito Patrón Command:**<p>
+"Command es un patrón de diseño de comportamiento que convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar."
 
-Imagina que estamos desarrollando un sistema para gestionar la decoración de habitaciones en un hotel de lujo. Cada habitación puede tener una decoración básica, pero los huéspedes pueden solicitar mejoras y adiciones para personalizar su experiencia. Estas mejoras pueden incluir servicios adicionales, como flores frescas, chocolate gourmet, vino de alta calidad, etc.
+**¿Por qué se elegío el Patrón Command?**<p>
+Porque ayuda a desacoplar el código, hacer el sistema más flexible y permitir funcionalidades como deshacer.<p>
+- Desacopla quien solicita una acción de quien la ejecuta.<p>
+- Permite deshacer acciones mas fácil.<p>
+- Hace el código más flexible y extensible.<p>
+- Facilita agregar nuevas operaciones sin modificar código existente.<p>
 
-Aplicación del Patrón:
+**Ejemplo de acciones que se pueden agregar** 
+- Editar tarea,	Modificar el nombre de una tarea,	**EditTaskCommand	---> EditTask(id, newName)**<p>
+- Reabrir tarea,	Marcar una tarea completada como pendiente,	**ReopenTaskCommand	---> ReopenTask(id)**<p>
+- Asignar usuario,	Asignar una tarea a un usuario específico,	**AssignUserCommand	---> AssignUserToTask(id, userId)**<p>
 
-En este escenario, el patrón que se seleccione se utilizará para agregar características adicionales y personalizadas a las habitaciones del hotel de manera dinámica.
+**Si se llama directamente a TaskManager.CreateTask() o TaskManager.CompleteTask(), tendríamos estos problemas:**<p>
+- Cada acción está directamente ligada a TaskManager, lo que dificulta modificarlo y el codigo que da muy acoplado.<p>
+- No se puede deshacer acciones fácilmente.<p>
+- Dificultad para agregar nuevas acciones.<p>
+---
+## Diagrma de Clases
+![Ejemplo de imagen](DiagramaClases_Punto4_ManagerTask_Command.png)
 
-El patrón que seleccione debe tener los siguientes beneficios:
-
-- Permite agregar nuevas funcionalidades a objetos existentes de manera dinámica.
-- Proporciona una alternativa flexible a la subclase para extender funcionalidades.
-- Mejora la legibilidad y el mantenimiento del código al separar las preocupaciones.
