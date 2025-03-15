@@ -59,6 +59,8 @@ El patrón que seleccione debe tener los siguientes beneficios:
 - Permite la extensión de nuevas operaciones sin modificar el código existente.
 - Facilita el registro de acciones para realizar operaciones de reversión.
 
+**Resultado:** [Respuesta](Punto4/README.md)
+
 ## 5. Decoración de Habitaciones en un Hotel
 
 Imagina que estamos desarrollando un sistema para gestionar la decoración de habitaciones en un hotel de lujo. Cada habitación puede tener una decoración básica, pero los huéspedes pueden solicitar mejoras y adiciones para personalizar su experiencia. Estas mejoras pueden incluir servicios adicionales, como flores frescas, chocolate gourmet, vino de alta calidad, etc.
