@@ -18,4 +18,4 @@ Requerimientos del sistema:
 
   ## Diagrama
 
-  ![Siagrama](diagramaClasePunto1/diagramaClasePunto1.png)
+  ![Diagrama](diagramaClasePunto1/diagramaClasePunto1.png)
