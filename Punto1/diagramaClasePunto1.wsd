@@ -1,0 +1,30 @@
+@startuml
+class Heroe {
+    +string Nombre
+    +string Clase
+    +int Nivel
+    +int Experiencia
+    +int PuntosHabilidad
+    +List<string> Habilidades
+    +List<string> Apariencia
+    +Heroe Clone()
+    +void Personalizar(string nombre,List<string> Apariencia)
+}
+
+class Guerrero {
+    +Guerrero Clone()
+}
+
+class Mago {
+    +Mago Clone()
+}
+
+class Arquero {
+    +Arquero Clone()
+}
+
+Heroe <|-- Guerrero
+Heroe <|-- Mago
+Heroe <|-- Arquero
+
+@enduml
