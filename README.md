@@ -14,7 +14,8 @@ Implementación de código, todos los ejercicios en el mismo lenguaje de program
 # Integrantes
 - Santiago Medina Peláez
 - Luis Eduardo Olaya Diáz
-- Luis Horacio Londoño Cifuentes 
+- Luis Horacio Londoño Cifuentes
+- Daniel Hernan Arevalo Gutierrez
 ---
 
 ## 1.Problema: Clonación de Personajes en un Videojuego de Aventuras 
