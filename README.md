@@ -74,3 +74,5 @@ El patrón que seleccione debe tener los siguientes beneficios:
 - Permite agregar nuevas funcionalidades a objetos existentes de manera dinámica.
 - Proporciona una alternativa flexible a la subclase para extender funcionalidades.
 - Mejora la legibilidad y el mantenimiento del código al separar las preocupaciones.
+
+**Resultado:** [Respuesta](Punto5/README.md)
