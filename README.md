@@ -31,6 +31,9 @@ Requerimientos del sistema:
   5. Los héroes deben mantener un registro de su experiencia, nivel y puntos de habilidad, y esta información debe copiarse correctamente al clonar un héroe. 
   6. El sistema debe ser eficiente y permitir la creación de múltiples clones de un mismo héroe sin duplicar innecesariamente los datos.
 
+**Resultado:** [Respuesta](Punto1/README.md)
+
+
 ## 2. 
 
 La empresa está desarrollando una aplicación de mensajería en tiempo real que permite a los usuarios comunicarse desde múltiples dispositivos. Cada vez que un usuario recibe un nuevo mensaje, todos los dispositivos del usuario deben ser notificados para que el mensaje se muestre en cada uno de ellos. Para mantener la flexibilidad y desacoplar la lógica de notificación de la aplicación principal. El patrón que escoja deberá permitir
@@ -56,6 +59,8 @@ El patrón que seleccione debe tener los siguientes beneficios:
 - Permite la extensión de nuevas operaciones sin modificar el código existente.
 - Facilita el registro de acciones para realizar operaciones de reversión.
 
+**Resultado:** [Respuesta](Punto4/README.md)
+
 ## 5. Decoración de Habitaciones en un Hotel
 
 Imagina que estamos desarrollando un sistema para gestionar la decoración de habitaciones en un hotel de lujo. Cada habitación puede tener una decoración básica, pero los huéspedes pueden solicitar mejoras y adiciones para personalizar su experiencia. Estas mejoras pueden incluir servicios adicionales, como flores frescas, chocolate gourmet, vino de alta calidad, etc.
@@ -69,3 +74,5 @@ El patrón que seleccione debe tener los siguientes beneficios:
 - Permite agregar nuevas funcionalidades a objetos existentes de manera dinámica.
 - Proporciona una alternativa flexible a la subclase para extender funcionalidades.
 - Mejora la legibilidad y el mantenimiento del código al separar las preocupaciones.
+
+**Resultado:** [Respuesta](Punto5/README.md)
